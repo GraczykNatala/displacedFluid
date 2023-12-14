@@ -16,7 +16,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        double displacedLiquid = 0;
+        double displacedFluid = 0;
 
         String userElementInput = "";
         double elDiameter;
@@ -41,9 +41,9 @@ public class Main {
                 }
             }
             double elementMass = DENSITY * elVolume;
-            displacedLiquid += elementMass;
+            displacedFluid += elementMass;
         }
-        System.out.println(RESULT_INFO + displacedLiquid);
+        System.out.println(RESULT_INFO + displacedFluid);
         scanner.close();
     }
 
