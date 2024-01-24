@@ -8,10 +8,18 @@ public abstract class Shape {
     public double getDiameter() {
         return diameter;
     }
-    public double getVolume(){
+
+    public double getVolume() {
         return volume;
     }
 
+    public void setDiameter(double diameter) {
+        this.diameter = diameter;
+    }
+
+    public void setVolume(double volume) {
+        this.volume = volume;
+    }
 
     protected Shape(double diameter) {
         this.diameter = diameter;
@@ -20,4 +28,5 @@ public abstract class Shape {
 
     abstract double calculateVolume(double diameter);
 }
+
 
